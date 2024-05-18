@@ -1,11 +1,12 @@
 namespace TaskManagement.Domain.DTOS
 {
     public class TaskDTO
-    {      
+    {
+        public long TaskId {get; set;}
         public string TaskCode { get; set; }
-       
+
         public string Title { get; set; }
-        
+
         public string Description { get; set; }
 
         // Status of the task (Pending, In Progress, Completed)        
@@ -14,16 +15,15 @@ namespace TaskManagement.Domain.DTOS
         // Priority level of the task (Low, Medium, High)       
         public string Priority { get; set; }
 
-        public DateTime CreatedDate { get; set; }
-       
-        public DateTime DueDate { get; set; }
+        public DateTime CreatedOn { get; set; }
 
         // Identifier of the user who created the task
-        public Guid CreatedBy { get; set; }
+        public string CreatedBy { get; set; }
+
+        public DateTime DueDate { get; set; }
 
         // Identifier of the user to whom the task is assigned
-        
-        public Guid AssignedTo { get; set; }
+        public string AssignedTo { get; set; }
 
         public string Comments { get; set; }
     }
