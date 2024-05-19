@@ -10,6 +10,10 @@ namespace TaskManagement.Service.Helpers
         {
             CreateMap<TaskModel, TaskDTO>()
                 .ReverseMap();
+            CreateMap<User, UserDTO>()
+                .ReverseMap();
+            CreateMap<Login, LoginDTO>()
+                .ReverseMap();
         }
     }
 }

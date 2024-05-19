@@ -1,4 +1,6 @@
-﻿namespace TaskManagement.Service.Helpers
+﻿using TaskManagement.Domain.DTOS;
+
+namespace TaskManagement.Service.Helpers
 {
     public class Result<T>
     {
@@ -35,5 +37,6 @@
             IsSuccess = true;
             Message = message;
         }
+
     }
 }

@@ -24,6 +24,7 @@ namespace TaskManagement.Data
         }
 
         public DbSet<TaskModel> Task { get; set; }
+        public DbSet<User> User { get; set; }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
@@ -57,6 +58,9 @@ namespace TaskManagement.Data
             builder.Entity<TaskModel>()
                    .ToTable("task")
                    .HasKey(x => x.TaskCode);
+            builder.Entity<User>()
+                    .ToTable("user")
+                    .HasKey(x => x.UserCode);
 
             base.OnModelCreating(builder);
         }

@@ -139,3 +139,8 @@ C:\Users\hassa\Desktop\Ifedayo\TaskManagement\bin\Debug\net8.0\runtimes\win\lib\
 C:\Users\hassa\Desktop\Ifedayo\TaskManagement\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\hassa\Desktop\Ifedayo\TaskManagement\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\hassa\Desktop\Ifedayo\TaskManagement\obj\Debug\net8.0\TaskManagement.sourcelink.json
+C:\Users\hassa\Desktop\Ifedayo\TaskManagement\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\hassa\Desktop\Ifedayo\TaskManagement\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\hassa\Desktop\Ifedayo\TaskManagement\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\hassa\Desktop\Ifedayo\TaskManagement\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\hassa\Desktop\Ifedayo\TaskManagement\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

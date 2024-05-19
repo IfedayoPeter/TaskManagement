@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TaskManagement.Domain.DTOS;
 using TaskManagement.Service.Interface;
 
 namespace TaskManagement.Controller
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class TaskController : ControllerBase

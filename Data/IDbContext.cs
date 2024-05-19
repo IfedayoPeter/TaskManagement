@@ -6,6 +6,7 @@ namespace TaskManagement.Data
     public interface IDbContext
     {
         DbSet<TaskModel> Task { get; set; }
+        DbSet<User> User { get; set; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }
