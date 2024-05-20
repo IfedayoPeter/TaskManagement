@@ -43,9 +43,6 @@ run your project with visual studio
 using cmd, connect to web socket to stream data created in real time:
 wscat -c ws://localhost:5259/ws
 
-Build the project using Maven:
-mvn clean install
-
 Access the application in your web browser:
 http://localhost:5259/swagger/index.html
 
