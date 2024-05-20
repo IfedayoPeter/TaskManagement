@@ -20,8 +20,11 @@
 Before running the application, make sure you have the following software installed:
 
 .Net 8
+<br/>
 Visual studio
+<br/>
 Mysql server
+<br/>
 Microsoft sql management studio
 
 # Getting Started
