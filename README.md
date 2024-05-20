@@ -58,11 +58,17 @@ http://localhost:5259/swagger/index.html
 The following API endpoints are available for interacting with the application:
 
 POST /createuser: create user account.
+<br/>
 POST /UserLogin: login with email and password to generate bearer token for authorization on Task endpoints.
+<br/>
 GET /getAllTask
+<br/>
 GET /getAllTaskById
+<br/>
 POST /createTask
+<br/>
 PUT /updateTask
+<br/>
 DELETE /deleteTask
 
 Please refer to the source code for more details on the API implementation.
