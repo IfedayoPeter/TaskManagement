@@ -35,6 +35,8 @@ git clone https://github.com/IfedayoPeter/TaskManagement
 
 using cmd navigave to project folder and run dotnet build to install the necessary dependencies
 
+bash Copy code dotnet restore
+
 Install wscat:
 npm install -g wscat
 
