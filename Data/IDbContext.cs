@@ -7,6 +7,7 @@ namespace TaskManagement.Data
     {
         DbSet<TaskModel> Task { get; set; }
         DbSet<User> User { get; set; }
+        DbSet<Notification> Notifications { get; set; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }

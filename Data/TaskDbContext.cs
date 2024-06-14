@@ -25,7 +25,7 @@ namespace TaskManagement.Data
 
         public DbSet<TaskModel> Task { get; set; }
         public DbSet<User> User { get; set; }
-
+        public DbSet<Notification> Notifications { get; set; }
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
             foreach (EntityEntry<AuditableEntity> entry in ChangeTracker.Entries<AuditableEntity>())
@@ -61,7 +61,9 @@ namespace TaskManagement.Data
             builder.Entity<User>()
                     .ToTable("user")
                     .HasKey(x => x.UserCode);
-
+            builder.Entity<Notification>()
+                   .ToTable("notifications")
+                   .HasKey(x => x.Id);
             base.OnModelCreating(builder);
         }
     }

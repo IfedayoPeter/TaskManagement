@@ -6,5 +6,6 @@ namespace TaskManagement.Data.Interface
     public interface IUserRepository
     {
          Task<User> CreateUser(User user);
+         Task<User> GetUserByCode(string userCode);
     }
 }

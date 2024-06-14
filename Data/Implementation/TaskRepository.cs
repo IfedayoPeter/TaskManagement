@@ -1,5 +1,6 @@
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using TaskManagement.Data.Interface;
 using TaskManagement.Domain.Model;
 using TaskManagement.Service.Helpers;
@@ -22,7 +23,10 @@ namespace TaskManagement.Data.Implementation
             await _context.SaveChangesAsync();
 
             // Broadcast the new task to all connected clients
-            var taskJson = JsonSerializer.Serialize(task);
+            // var taskJson = JsonSerializer.Serialize(task);
+            // await _webSocketHandler.BroadcastAsync(taskJson);
+
+            var taskJson = JsonConvert.SerializeObject(task, Formatting.Indented);
             await _webSocketHandler.BroadcastAsync(taskJson);
 
             return task;
@@ -33,9 +37,9 @@ namespace TaskManagement.Data.Implementation
             var result = await _context.Task.ToListAsync();
 
             // Broadcast the task to all connected clients
-            var taskJson = JsonSerializer.Serialize(result);
+            var taskJson = JsonConvert.SerializeObject(result, Formatting.Indented);
             await _webSocketHandler.BroadcastAsync(taskJson);
-            
+
             return result;
         }
 
@@ -46,7 +50,7 @@ namespace TaskManagement.Data.Implementation
             .FirstOrDefaultAsync();
 
             // Broadcast the task to all connected clients
-            var taskJson = JsonSerializer.Serialize(result);
+            var taskJson = JsonConvert.SerializeObject(result, Formatting.Indented);
             await _webSocketHandler.BroadcastAsync(taskJson);
 
             return result;
@@ -57,7 +61,7 @@ namespace TaskManagement.Data.Implementation
             //_context.Task.Update(task);
             await _context.SaveChangesAsync();
             // Broadcast the updated task to all connected clients
-            var taskJson = JsonSerializer.Serialize(task);
+            var taskJson = JsonConvert.SerializeObject(task, Formatting.Indented);
             await _webSocketHandler.BroadcastAsync(taskJson);
             return task;
         }

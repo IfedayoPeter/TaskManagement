@@ -13,14 +13,18 @@ namespace TaskManagement.Service.Implementations
     {
         private readonly ITaskRepository _taskRepository;
         private readonly IMapper _mapper;
+        private readonly INotificationService _notificationService;
+
         private readonly ILogger<TaskService> _logger;
         public TaskService(
             ITaskRepository taskRepository,
+            INotificationService notificationService,
             IMapper mapper,
             ILogger<TaskService> logger
         )
         {
             _taskRepository = taskRepository;
+            _notificationService = notificationService;
             _mapper = mapper;
             _logger = logger;
         }
@@ -41,6 +45,9 @@ namespace TaskManagement.Service.Implementations
                 {
                     //map taskDTO to response 
                     result.SetSuccess(_mapper.Map<TaskDTO>(response), $"Task with code {response.TaskCode} Created Successfully !");
+
+                    string message = $"You have been assigned a task: {taskDTO.AssignedTo}";
+                    await _notificationService.CreateNotification(message, taskDTO.AssignedTo);//sends notification to who the task was assigned to
                 }
 
                 else

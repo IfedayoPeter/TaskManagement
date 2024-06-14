@@ -5899,24 +5899,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hassa\\.nuget\\packages\\": {}
+    "C:\\Users\\LAG-SOFTWARE\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hassa\\Desktop\\Ifedayo\\TaskManagement\\TaskManagement.csproj",
+      "projectUniqueName": "C:\\Users\\LAG-SOFTWARE\\Documents\\TaskManagement\\TaskManagement.csproj",
       "projectName": "TaskManagement",
-      "projectPath": "C:\\Users\\hassa\\Desktop\\Ifedayo\\TaskManagement\\TaskManagement.csproj",
-      "packagesPath": "C:\\Users\\hassa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hassa\\Desktop\\Ifedayo\\TaskManagement\\obj\\",
+      "projectPath": "C:\\Users\\LAG-SOFTWARE\\Documents\\TaskManagement\\TaskManagement.csproj",
+      "packagesPath": "C:\\Users\\LAG-SOFTWARE\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LAG-SOFTWARE\\Documents\\TaskManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hassa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\LAG-SOFTWARE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6008,7 +6010,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

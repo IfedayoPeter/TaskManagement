@@ -95,6 +95,8 @@ builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 builder.Services.AddScoped<ILoginService, LoginService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddSingleton<WebSocketHandler>();
+builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
+builder.Services.AddScoped<INotificationService, NotificationService>();
 
 
 builder.Services.AddAutoMapper(typeof(Program));
